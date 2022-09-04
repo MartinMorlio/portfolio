@@ -1,15 +1,13 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import logo from "./img/logo.png";
 
 function Home() {
-  // fixed Header
   window.addEventListener("scroll", function () {
     const header = document.querySelector(".header");
     header.classList.toggle("active", window.scrollY > 0);
   });
-  // Toogle Menu
-   const [show, setShow] = useState(true);
+  const [show, setShow] = useState(true);
   return (
     <div className="home" id="Home">
       <div className="home__bg">
@@ -20,7 +18,7 @@ function Home() {
           <div className="navigation pxy__30">
             <ul className="navbar d__flex">
               <a href="#Home">
-                <li className="nav__items mx__15">Pricipal</li>
+                <li className="nav__items mx__15">Principal</li>
               </a>
               <a href="#About">
                 <li className="nav__items mx__15">Acerca de mi</li>
@@ -28,10 +26,13 @@ function Home() {
               <a href="#Services">
                 <li className="nav__items mx__15">Servicios</li>
               </a>
+              <a href="#Experience">
+                <li className="nav__items mx__15">Experiencia</li>
+              </a>
               <a href="#Portfolio">
                 <li className="nav__items mx__15">Portafolio</li>
               </a>
-              
+
               <a href="#Contact">
                 <li className="nav__items mx__15">Contactame</li>
               </a>
@@ -39,7 +40,8 @@ function Home() {
           </div>
           {/* Toogle Menu */}
           <div className="toggle__menu">
-            <svg onClick={() => setShow(!show)}
+            <svg
+              onClick={() => setShow(!show)}
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -53,7 +55,6 @@ function Home() {
               />
             </svg>
           </div>
-          
         </div>
         {/* HOME CONTENT */}
         <div className="container">
@@ -61,7 +62,9 @@ function Home() {
             <div className="home__meta">
               <h1 className="home__text pz__10">Bienvenidos a mi portafolio</h1>
               <h2 className="home__text pz__10">Hola, soy Martín Morlio</h2>
-              <h3 className="home__text sweet pz__10">Desarrollador Web Full Stack</h3>
+              <h3 className="home__text sweet pz__10">
+                Desarrollador Web Full Stack
+              </h3>
             </div>
           </div>
         </div>

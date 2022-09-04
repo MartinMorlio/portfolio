@@ -50,4 +50,7 @@ h1.service__text {
 .service__box {
     padding: 32px;
 }
+.service__box {
+    width: 95%;
+}
 }

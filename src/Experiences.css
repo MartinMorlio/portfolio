@@ -1,0 +1,21 @@
+.experiences {
+    background-color: #191919;
+    width: 100%;
+    border-bottom: 50px solid black;
+}
+.experiences-container {
+    display: flex;
+    padding: 12px;
+}
+.experiences-subcontainer-one {
+    display: flex;
+    padding: 12px;
+}
+.experiences-subcontainer-two {
+    display: flex;
+    padding: 12px;
+}
+.experiences-details {
+    font-size: 20px;
+    padding: 12px;
+}

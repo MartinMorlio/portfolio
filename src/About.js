@@ -2,7 +2,6 @@ import React from "react";
 import "./About.css";
 import aboutImg from "./img/img-cv.jpg";
 function About() {
-  //  Up To Top Btn
     window.addEventListener("scroll", function(){
       const upToTop = document.querySelector("a.bottom__to__top");
        upToTop.classList.toggle("active", window.scrollY > 0)
@@ -27,7 +26,7 @@ function About() {
               Mi próximo objetivo es seguir aprendiendo, poner en práctica mis conocimientos en alguna empresa y más adelante poder seguir especializándome en ciberseguridad, otro tema que me súper apasiona.
               </p>
               <div className="about__button d__flex align__items__center">
-                <a href="src\img\Martin.Morlio.CV.pdf" download="CV-Martín-Morlio.pdf">
+                <a href="src\img\MartinMorlioCV.pdf" download="CV-Martín-Morlio.pdf">
                   <button className="about btn pointer">Descargar Cv</button>
                 </a>
                 <a href="contact#Contact">
